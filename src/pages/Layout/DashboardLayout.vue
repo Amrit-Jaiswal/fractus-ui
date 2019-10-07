@@ -6,7 +6,11 @@
       <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/dashboard">
         <md-icon>dashboard</md-icon>
-        <p>Dashboard</p>
+        <p>ES Monitoring</p>
+      </sidebar-link>
+      <sidebar-link to="/screening">
+        <md-icon>person</md-icon>
+        <p>E&S Screeing</p>
       </sidebar-link>
       <sidebar-link to="/user">
         <md-icon>person</md-icon>
