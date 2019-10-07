@@ -77,29 +77,25 @@
 
           <template slot="footer">
             <div class="stats">
-              <md-icon>date_range</md-icon>Last 24 Hours
+              <md-icon>date_range</md-icon>Safe for Investment
             </div>
           </template>
         </stats-card>
       </div>
       <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
-        <stats-card data-background-color="orange">
+        <stats-card data-background-color="brown">
           <template slot="header">
             <md-icon>content_copy</md-icon>
           </template>
 
           <template slot="content">
-            <p class="category">Used Space</p>
-            <h3 class="title">
-              49/50
-              <small>GB</small>
-            </h3>
+            <p class="category">Brown Zone</p>
+            <h3 class="title">$20,000</h3>
           </template>
 
           <template slot="footer">
             <div class="stats">
-              <md-icon class="text-danger">warning</md-icon>
-              <a href="#pablo">Get More Space...</a>
+              <md-icon class="text-danger">warning</md-icon>Warning
             </div>
           </template>
         </stats-card>
@@ -111,13 +107,13 @@
           </template>
 
           <template slot="content">
-            <p class="category">Fixed Issues</p>
-            <h3 class="title">75</h3>
+            <p class="category">Red Zone</p>
+            <h3 class="title">$5,000</h3>
           </template>
 
           <template slot="footer">
             <div class="stats">
-              <md-icon>local_offer</md-icon>Tracked from Github
+              <md-icon class="text-danger">warning</md-icon>Not safe for Investment
             </div>
           </template>
         </stats-card>

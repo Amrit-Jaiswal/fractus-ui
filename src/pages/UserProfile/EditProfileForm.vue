@@ -96,8 +96,7 @@ export default {
       city: null,
       country: null,
       code: null,
-      aboutme:
-        "Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
+      aboutme: "Fractus Team"
     };
   }
 };

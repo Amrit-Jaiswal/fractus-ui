@@ -78,7 +78,7 @@
 </template>
 <script>
 export default {
-  name: "edit-profile-form",
+  name: "question-form",
   props: {
     dataBackgroundColor: {
       type: String,
