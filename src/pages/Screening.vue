@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import { Questionnaire } from "@/pages";
+import Questionnaire from "@/pages/Questionnaire.vue"
 
 export default {
   components: {
-    Questionnaire
+    'question-form' : Questionnaire
   }
 };
 </script>
