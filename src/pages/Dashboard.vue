@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="md-layout">
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
+      <!-- <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
         <chart-card
           :chart-data="dailySalesChart.data"
           :chart-options="dailySalesChart.options"
@@ -24,18 +24,18 @@
             </div>
           </template>
         </chart-card>
-      </div>
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
+      </div>-->
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
         <chart-card
           :chart-data="emailsSubscriptionChart.data"
           :chart-options="emailsSubscriptionChart.options"
           :chart-responsive-options="emailsSubscriptionChart.responsiveOptions"
           :chart-type="'Bar'"
-          data-background-color="red"
+          data-background-color="green"
         >
           <template slot="content">
-            <h4 class="title">Amount Invested($)</h4>
-            <p class="category">Current year invested amount</p>
+            <h4 class="title">Amount Invested (Months)</h4>
+            <p class="category">Current year investment amount</p>
           </template>
 
           <template slot="footer">
@@ -45,7 +45,7 @@
           </template>
         </chart-card>
       </div>
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
         <chart-card
           :chart-data="dataCompletedTasksChart.data"
           :chart-options="dataCompletedTasksChart.options"
@@ -53,8 +53,8 @@
           data-background-color="green"
         >
           <template slot="content">
-            <h4 class="title">Completed Tasks</h4>
-            <p class="category">Last Campaign Performance</p>
+            <h4 class="title">Amount Invested (Years)</h4>
+            <p class="category">Last 5 years investment amount</p>
           </template>
 
           <template slot="footer">
@@ -95,7 +95,7 @@
 
           <template slot="footer">
             <div class="stats">
-              <md-icon class="text-danger">warning</md-icon>Warning
+              <md-icon class="text-warning">warning</md-icon>Warning
             </div>
           </template>
         </stats-card>
@@ -139,8 +139,8 @@
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
         <md-card>
           <md-card-header data-background-color="orange">
-            <h4 class="title">Employees Stats</h4>
-            <p class="category">New employees on 15th September, 2016</p>
+            <h4 class="title">Client Stats</h4>
+            <p class="category">Client status as on 09th October, 2019</p>
           </md-card-header>
           <md-card-content>
             <ordered-table table-header-color="orange"></ordered-table>
@@ -190,29 +190,29 @@ export default {
   },
   data() {
     return {
-      dailySalesChart: {
-        data: {
-          labels: ["M", "T", "W", "T", "F", "S", "S"],
-          series: [[12, 17, 7, 17, 23, 18, 38]]
-        },
-        options: {
-          lineSmooth: this.$Chartist.Interpolation.cardinal({
-            tension: 0
-          }),
-          low: 0,
-          high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-          chartPadding: {
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0
-          }
-        }
-      },
+      // dailySalesChart: {
+      //   data: {
+      //     labels: ["M", "T", "W", "T", "F", "S", "S"],
+      //     series: [[12, 17, 7, 17, 23, 18, 38]]
+      //   },
+      //   options: {
+      //     lineSmooth: this.$Chartist.Interpolation.cardinal({
+      //       tension: 0
+      //     }),
+      //     low: 0,
+      //     high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+      //     chartPadding: {
+      //       top: 0,
+      //       right: 0,
+      //       bottom: 0,
+      //       left: 0
+      //     }
+      //   }
+      // },
       dataCompletedTasksChart: {
         data: {
-          labels: ["12am", "3pm", "6pm", "9pm", "12pm", "3am", "6am", "9am"],
-          series: [[230, 750, 450, 300, 280, 240, 200, 190]]
+          labels: ["2015", "2016", "2017", "2018", "2019"],
+          series: [[230, 750, 450, 300, 280]]
         },
 
         options: {
@@ -232,18 +232,18 @@ export default {
       emailsSubscriptionChart: {
         data: {
           labels: [
-            "Ja",
-            "Fe",
-            "Ma",
-            "Ap",
-            "Mai",
-            "Ju",
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
             "Jul",
-            "Au",
-            "Se",
-            "Oc",
-            "No",
-            "De"
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
           ],
           series: [[542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 0, 0]]
         },

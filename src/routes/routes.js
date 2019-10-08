@@ -9,6 +9,7 @@ import Icons from "@/pages/Icons.vue";
 import Maps from "@/pages/Maps.vue";
 import Notifications from "@/pages/Notifications.vue";
 import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
+import CSR from "@/pages/CSR.vue";
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
         path: "screening",
         name: "Client Screning",
         component: Screening
+      },
+      {
+        path: "csr",
+        name: "CSR",
+        component: CSR
       },
       {
         path: "user",

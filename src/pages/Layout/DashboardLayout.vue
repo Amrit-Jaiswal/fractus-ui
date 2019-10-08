@@ -5,12 +5,16 @@
     <side-bar>
       <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/dashboard">
-        <md-icon>dashboard</md-icon>
-        <p>ES Monitoring</p>
+        <md-icon>assessment</md-icon>
+        <p>E&S Monitoring</p>
       </sidebar-link>
       <sidebar-link to="/screening">
-        <md-icon>person</md-icon>
-        <p>E&S Screeing</p>
+        <md-icon>find_in_page</md-icon>
+        <p>E&S Screening</p>
+      </sidebar-link>
+      <sidebar-link to="/csr">
+        <md-icon>eco</md-icon>
+        <p>CSR</p>
       </sidebar-link>
       <sidebar-link to="/user">
         <md-icon>person</md-icon>
@@ -18,19 +22,19 @@
       </sidebar-link>
       <sidebar-link to="/table">
         <md-icon>content_paste</md-icon>
-        <p>Table list</p>
+        <p>Client list</p>
       </sidebar-link>
       <sidebar-link to="/typography">
-        <md-icon>library_books</md-icon>
-        <p>Typography</p>
+        <md-icon>eco</md-icon>
+        <p>DB CSR</p>
       </sidebar-link>
       <sidebar-link to="/icons">
         <md-icon>bubble_chart</md-icon>
-        <p>Icons</p>
+        <p>Environment Policy</p>
       </sidebar-link>
       <sidebar-link to="/maps">
         <md-icon>location_on</md-icon>
-        <p>Maps</p>
+        <p>DB Footprint</p>
       </sidebar-link>
       <sidebar-link to="/notifications">
         <md-icon>notifications</md-icon>
