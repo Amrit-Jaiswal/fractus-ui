@@ -190,29 +190,10 @@ export default {
   },
   data() {
     return {
-      // dailySalesChart: {
-      //   data: {
-      //     labels: ["M", "T", "W", "T", "F", "S", "S"],
-      //     series: [[12, 17, 7, 17, 23, 18, 38]]
-      //   },
-      //   options: {
-      //     lineSmooth: this.$Chartist.Interpolation.cardinal({
-      //       tension: 0
-      //     }),
-      //     low: 0,
-      //     high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-      //     chartPadding: {
-      //       top: 0,
-      //       right: 0,
-      //       bottom: 0,
-      //       left: 0
-      //     }
-      //   }
-      // },
       dataCompletedTasksChart: {
         data: {
           labels: ["2015", "2016", "2017", "2018", "2019"],
-          series: [[230, 750, 450, 300, 280]]
+          series: [[230, 750, 450, 300, 429]]
         },
 
         options: {
@@ -245,14 +226,14 @@ export default {
             "Nov",
             "Dec"
           ],
-          series: [[542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 0, 0]]
+          series: [[42, 43, 20, 80, 53, 53, 26, 34, 68, 10, 0, 0]]
         },
         options: {
           axisX: {
             showGrid: false
           },
           low: 0,
-          high: 1000,
+          high: 100,
           chartPadding: {
             top: 0,
             right: 5,
