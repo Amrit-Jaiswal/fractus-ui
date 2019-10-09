@@ -2,6 +2,10 @@
   "name": "vue-material-dashboard",
   "version": "1.2.1",
   "private": true,
+  "engines": {
+    "node": ">=6.9.3",
+    "npm": ">=2.15.9"
+  },
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "dev": "npm run serve",
