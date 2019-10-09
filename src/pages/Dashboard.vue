@@ -136,7 +136,7 @@
           </template>
         </stats-card>
       </div>
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
           <md-card-header data-background-color="orange">
             <h4 class="title">Client Stats</h4>
@@ -147,7 +147,7 @@
           </md-card-content>
         </md-card>
       </div>
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
+      <!-- <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
         <nav-tabs-card>
           <template slot="content">
             <span class="md-nav-tabs-title">Tasks:</span>
@@ -166,7 +166,7 @@
             </md-tabs>
           </template>
         </nav-tabs-card>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
