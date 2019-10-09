@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
-    "dev": "npm run serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "start": "node index.js"
+    "dev": "cross-env NODE_ENV=development  vue-cli-service serve --open",
+    "build": "cross-env NODE_ENV=production vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "chartist": "0.11.2",
@@ -25,6 +24,7 @@
     "@vue/cli-plugin-eslint": "3.8.0",
     "@vue/cli-service": "3.8.3",
     "@vue/eslint-config-prettier": "4.0.1",
+    "cross-env": "^6.0.3",
     "es6-promise": "4.2.8",
     "eslint-plugin-vue": "5.2.2",
     "node-sass": "4.12.0",
