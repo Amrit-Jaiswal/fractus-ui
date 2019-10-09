@@ -6,8 +6,7 @@
     "serve": "vue-cli-service serve --open",
     "dev": "npm run serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "start": "npm run serve"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "chartist": "0.11.2",
