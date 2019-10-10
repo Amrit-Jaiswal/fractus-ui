@@ -2,14 +2,14 @@ import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
 import UserProfile from "@/pages/UserProfile.vue";
+import EsgAnalytics from "@/pages/EsgAnalytics.vue";
 import Screening from "@/pages/Screening.vue";
 import TableList from "@/pages/TableList.vue";
-import Typography from "@/pages/Typography.vue";
 import Icons from "@/pages/Icons.vue";
 import Maps from "@/pages/Maps.vue";
 import Notifications from "@/pages/Notifications.vue";
-import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
 import CSR from "@/pages/CSR.vue";
+import QUES from "@/pages/Questionnaire.vue";
 
 const routes = [
   {
@@ -29,7 +29,7 @@ const routes = [
       },
       {
         path: "csr",
-        name: "CSR",
+        //name: "CSR",
         component: CSR
       },
       {
@@ -38,14 +38,9 @@ const routes = [
         component: UserProfile
       },
       {
-        path: "table",
-        name: "Table List",
+        path: "clientlist",
+        name: "Client Report",
         component: TableList
-      },
-      {
-        path: "typography",
-        name: "Typography",
-        component: Typography
       },
       {
         path: "icons",
@@ -66,9 +61,14 @@ const routes = [
         component: Notifications
       },
       {
-        path: "upgrade",
-        name: "Upgrade to PRO",
-        component: UpgradeToPRO
+        path: "analytic",
+        name: "Analytics",
+        component: EsgAnalytics
+      },
+      {
+        path: "ques",
+        name: "Questionnaire",
+        component: QUES
       }
     ]
   }

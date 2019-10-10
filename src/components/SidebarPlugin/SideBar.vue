@@ -13,6 +13,7 @@
       </a>
 
       <a href target="_blank" class="simple-text logo-normal">{{ title }}</a>
+   
     </div>
     <div class="sidebar-wrapper">
       <slot name="content"></slot>
@@ -40,7 +41,11 @@ export default {
   props: {
     title: {
       type: String,
-      default: "ESMS-DB"
+      default: "DB-SEGA"
+    },
+    subtitle: {
+      type: String,
+      default: "Screening Envirnomental Economy"
     },
     backgroundImage: {
       type: String,

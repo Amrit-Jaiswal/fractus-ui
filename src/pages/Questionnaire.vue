@@ -1,80 +1,86 @@
 <template>
-  <form>
-    <md-card>
+<form>
+  <md-card>
       <md-card-header :data-background-color="dataBackgroundColor">
-        <h4 class="title">Edit Profile</h4>
-        <p class="category">Complete your profile</p>
+      
+        <h4 class="title">Questionnaire</h4>
+        <p class="category">Answer the following on scale of 5</p>
       </md-card-header>
 
       <md-card-content>
-        <div class="md-layout">
-          <div class="md-layout-item md-small-size-100 md-size-33">
-            <md-field>
-              <label>Company (disabled)</label>
-              <md-input v-model="disabled" disabled></md-input>
-            </md-field>
+        
+     <div>
+           <label>1. Will the Project release pollutants or any hazardous, toxic or noxious substances to air?</label>
+           <br>
+
+           <input type="radio" id="one" value="One" name="q1" v-model="picked">
+            <label for="one">Yes</label>
+            <br>
+            <input type="radio" id="two" value="Two" name="q1" v-model="picked">
+            <label for="two">No</label>
+            <br>
           </div>
-          <div class="md-layout-item md-small-size-100 md-size-33">
-            <md-field>
-              <label>User Name</label>
-              <md-input v-model="username" type="text"></md-input>
-            </md-field>
+
+<br>
+<div>
+          <label>2. Will the Project cause noise and vibration or release of light, heat energy or electromagnetic radiation?</label>
+           <br>
+
+           <input type="radio" id="one" value="One" name="q2" v-model="picked">
+            <label for="one">Yes</label>
+            <br>
+            <input type="radio" id="two" value="Two" name="q2" v-model="picked">
+            <label for="two">No</label>
+            <br>
           </div>
-          <div class="md-layout-item md-small-size-100 md-size-33">
-            <md-field>
-              <label>Email Address</label>
-              <md-input v-model="emailadress" type="email"></md-input>
-            </md-field>
+          <br>
+
+<div>
+           <label>3. Will construction or operation of the Project use natural resources such as land, water, materials or energy, especially any resources which are non-renewable or in short supply?</label>
+           <br>
+
+           <input type="radio" id="one" value="One" name="q3" v-model="picked">
+            <label for="one">Yes</label>
+            <br>
+            <input type="radio" id="two" value="Two" name="q3" v-model="picked">
+            <label for="two">No</label>
+            <br>
           </div>
-          <div class="md-layout-item md-small-size-100 md-size-50">
-            <md-field>
-              <label>First Name</label>
-              <md-input v-model="firstname" type="text"></md-input>
-            </md-field>
+          <br>
+
+<div>
+           <label>4. Will there be any risk of accidents during construction or operation of the Project which could affect human health or the environment?</label>
+           <br>
+
+           <input type="radio" id="one" value="One" name="q4" v-model="picked">
+            <label for="one">Yes</label>
+            <br>
+            <input type="radio" id="two" value="Two" name="q4" v-model="picked">
+            <label for="two">No</label>
+            <br>
           </div>
-          <div class="md-layout-item md-small-size-100 md-size-50">
-            <md-field>
-              <label>Last Name</label>
-              <md-input v-model="lastname" type="text"></md-input>
-            </md-field>
+            <br>
+
+<div>
+             <label>5. Are there an areas or features of historic or cultural importance on or around the location which could be affected by the Project?</label>
+           <br>
+
+           <input type="radio" id="one" value="One" name="q5" v-model="picked">
+            <label for="one">Yes</label>
+            <br>
+            <input type="radio" id="two" value="Two" name="q5" v-model="picked">
+            <label for="two">No</label>
+            <br>
           </div>
-          <div class="md-layout-item md-small-size-100 md-size-100">
-            <md-field>
-              <label>Adress</label>
-              <md-input v-model="address" type="text"></md-input>
-            </md-field>
+
+          <div class="md-layout-item md-size-200 text-right">
+            <md-button class="md-raised md-success">Save</md-button>
           </div>
-          <div class="md-layout-item md-small-size-100 md-size-33">
-            <md-field>
-              <label>City</label>
-              <md-input v-model="city" type="text"></md-input>
-            </md-field>
-          </div>
-          <div class="md-layout-item md-small-size-100 md-size-33">
-            <md-field>
-              <label>Country</label>
-              <md-input v-model="country" type="text"></md-input>
-            </md-field>
-          </div>
-          <div class="md-layout-item md-small-size-100 md-size-33">
-            <md-field>
-              <label>Postal Code</label>
-              <md-input v-model="code" type="number"></md-input>
-            </md-field>
-          </div>
-          <div class="md-layout-item md-size-100">
-            <md-field maxlength="5">
-              <label>About Me</label>
-              <md-textarea v-model="aboutme"></md-textarea>
-            </md-field>
-          </div>
-          <div class="md-layout-item md-size-100 text-right">
-            <md-button class="md-raised md-success">Update Profile</md-button>
-          </div>
-        </div>
+      
       </md-card-content>
     </md-card>
   </form>
+  
 </template>
 <script>
 export default {

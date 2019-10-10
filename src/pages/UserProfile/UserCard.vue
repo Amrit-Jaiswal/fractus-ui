@@ -1,18 +1,16 @@
 <template>
   <md-card class="md-card-profile">
-    <div class="md-card-avatar">
+    <!-- <div class="md-card-avatar">
       <img class="img" :src="cardUserImage" />
-    </div>
+    </div>-->
 
     <md-card-content>
-      <h6 class="category text-gray">CEO / Co-Founder</h6>
-      <h4 class="card-title">Alec Thompson</h4>
+      <h4 class="card-title">Environmental and Social Management System</h4>
       <p class="card-description">
-        Don't be scared of the truth because we need to restart the human
-        foundation in truth And I love you like Kanye loves Kanye I love Rick
-        Owens’ bed design but the back is...
+        Be a part of the solution, 
+        not part of the pollution.
       </p>
-      <md-button class="md-round md-success">Follow</md-button>
+      <md-button class="md-round md-success" href="https://twitter.com/unenvironment?lang=en">Follow us on Twitter</md-button>
     </md-card-content>
   </md-card>
 </template>

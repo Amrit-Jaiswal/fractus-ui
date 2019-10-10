@@ -12,6 +12,10 @@
         <md-icon>find_in_page</md-icon>
         <p>E&S Screening</p>
       </sidebar-link>
+      <sidebar-link to="/analytic">
+        <md-icon>dvr</md-icon>
+        <p>ESG Analytics & Reporting</p>
+      </sidebar-link>
       <sidebar-link to="/csr">
         <md-icon>eco</md-icon>
         <p>CSR</p>
@@ -20,13 +24,9 @@
         <md-icon>person</md-icon>
         <p>User Profile</p>
       </sidebar-link>
-      <sidebar-link to="/table">
+      <sidebar-link to="/clientlist">
         <md-icon>content_paste</md-icon>
         <p>Client list</p>
-      </sidebar-link>
-      <sidebar-link to="/typography">
-        <md-icon>eco</md-icon>
-        <p>DB CSR</p>
       </sidebar-link>
       <sidebar-link to="/icons">
         <md-icon>bubble_chart</md-icon>
@@ -34,7 +34,7 @@
       </sidebar-link>
       <sidebar-link to="/maps">
         <md-icon>location_on</md-icon>
-        <p>DB Footprint</p>
+        <p>Client Footprint</p>
       </sidebar-link>
       <sidebar-link to="/notifications">
         <md-icon>notifications</md-icon>

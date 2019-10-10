@@ -4,9 +4,11 @@
       <md-table-row slot="md-table-row" slot-scope="{ item }">
         <md-table-cell md-label="ID">{{ item.id }}</md-table-cell>
         <md-table-cell md-label="Name">{{ item.name }}</md-table-cell>
-        <md-table-cell md-label="Amount">{{ item.salary }}</md-table-cell>
+        <md-table-cell md-label="ESG Score">{{ item.ESG_Score }}</md-table-cell>
+        <md-table-cell md-label="Envirnoment">{{ item.Envirnoment }}</md-table-cell>
+        <md-table-cell md-label="Social">{{ item.Social }}</md-table-cell>
+        <md-table-cell md-label="Governance">{{ item.Governance }}</md-table-cell>
         <md-table-cell md-label="Country">{{ item.country }}</md-table-cell>
-        <md-table-cell md-label="City">{{ item.city }}</md-table-cell>
       </md-table-row>
     </md-table>
   </div>
@@ -27,31 +29,40 @@ export default {
       users: [
         {
           id: 1,
-          name: "Dakota Rice",
-          salary: "$36,738",
+          name: "Suzlon",
+          ESG_Score: "80",
+          Envirnoment: "Good",
+          Social : "Good",
+          Governance : "Excellent",
           country: "India",
-          city: "New Delhi"
+          
         },
         {
           id: 2,
-          name: "Minerva Hooper",
-          salary: "$23,738",
-          country: "India",
-          city: "Chennai"
+          name: "Reliance",
+          ESG_Score: "58",
+          Envirnoment: "Good",
+          Social : "Good",
+          Governance : "Ok",
+          country: "India"
         },
         {
           id: 3,
-          name: "Sage Rodriguez",
-          salary: "$56,142",
-          country: "India",
-          city: "Surat"
+          name: "Samsung",
+          ESG_Score: "45",
+          Envirnoment: "Bad",
+          Social : "Good",
+          Governance : "Ok",
+          country: "India"
         },
         {
           id: 4,
-          name: "Philip Chaney",
-          salary: "$38,735",
-          country: "India",
-          city: "Pune"
+          name: "Philips",
+           ESG_Score: "69",
+          Envirnoment: "Good",
+          Social : "Excellent",
+          Governance : "Good",
+          country: "India"
         }
       ]
     };
